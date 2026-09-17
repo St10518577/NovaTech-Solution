@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+header {
+    background-color: #0b1f3a;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section:first-child {
+    background-color: #dbeafe;
+    padding: 80px 40px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+section:first-child h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+section:first-child p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+section:first-child a {
+    display: inline-block;
+    background-color: #0b1f3a;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section:nth-child(2) {
+    padding: 50px 0;
+}
+
+section:nth-child(2) h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section:nth-child(2) h3 {
+    margin-top: 20px;
+    color: #0b1f3a;
+}
+
+footer {
+    background-color: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+.logo {
+    width: 800px;
+    height: auto;
+    display: block;
+    margin:0 auto;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    section:first-child {
+        padding: 50px 20px;
+    }
+
+    section:first-child h2 {
+        font-size: 30px;
+    }
+
+    section:first-child p {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+.service-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+form {
+    max-width: 650px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #0b1f3a;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #0b1f3a;
+}
+
+form button {
+    background-color: #0b1f3a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #163d70;
+}
+.contact-info {
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    color: #0b1f3a;
+    margin-top: 25px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+ .hero {
+    background: linear-gradient(rgba(11, 31, 58, 0.85), rgba(11, 31, 58, 0.85)),
+                url("../Images/logo.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 90px 30px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: white;
+    color: #0b1f3a;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero a:hover {
+    background-color: #dbeafe;
+}
+.hero img {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.it-repair-image {
+    width: 350px !important;
+    height: 180px !important;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+
