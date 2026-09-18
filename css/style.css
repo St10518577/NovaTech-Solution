@@ -268,4 +268,23 @@ form button:hover {
     border-radius: 10px;
 }
 
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Make the Google Map responsive */
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
 
