@@ -1,56 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaTech Solutions | Services</title>
+
+    <title>Our Services | NovaTech Solutions</title>
+
+    <meta name="description" content="Explore NovaTech Solutions services, including website development, IT support and computer repairs for individuals and small businesses.">
+
+    <meta name="keywords" content="website development, IT support, computer repairs, NovaTech Solutions, technology services">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+<script src="js/script.js" defer></script>
 
 <body>
 
+    <!-- Header and Navigation -->
     <header>
-        
-
         <nav>
-            
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
+            <a href="services.html" aria-current="page">Services</a>
             <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
-           
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <section>
-            <h2>Our Services</h2>
 
-            <h3>Website Development</h3>
+        <section class="services-section">
 
+            <h1>Our Services</h1>
+            <div class="service-search">
+    <label for="serviceSearch">Search for a service:</label>
 
-            <img src="Images/Services/website-development.jpeg"
-     alt="Website Development"
-     class="service-image">
+    <input
+        type="search"
+        id="serviceSearch"
+        placeholder="Search services...">
 
-            <p>Professional and user-friendly websites for individuals and small businesses.</p>
+    <p id="noResults" aria-live="polite"></p>
+</div>
 
-            <h3>IT Support</h3>
+            <!-- Website Development -->
+            <article class="service-card">
+                <h2>Website Development</h2>
 
-            <img src="Images/Services/it-support.jpeg" alt="IT Support"class="it repair-image" width="600">
+                <img
+                    src="Images/Services/website-development.jpeg"
+                    alt="Website development and website design"
+                    class="service-image">
 
+                <p>
+                    Professional and user-friendly websites for individuals
+                    and small businesses.
+                </p>
 
-            <p>Reliable assistance with common computer and technology problems.</p>
+                <a href="enquiry.html">Enquire About This Service</a>
+            </article>
 
-            <h3>Computer Repairs</h3>
+            <!-- IT Support -->
+            <article class="service-card">
+                <h2>IT Support</h2>
 
-           <img src="Images/Services/computer-repairs.jpeg" alt="Computer Repairs"class="it repair-image" width="600">
+                <img
+                    src="Images/Services/it-support.jpeg"
+                    alt="Technical IT support services"
+                    class="service-image">
 
-            <p>Basic troubleshooting and support to help keep your computer systems running smoothly.</p>
+                <p>
+                    Reliable assistance with common computer and
+                    technology problems.
+                </p>
+
+                <a href="enquiry.html">Enquire About This Service</a>
+            </article>
+
+            <!-- Computer Repairs -->
+            <article class="service-card">
+                <h2>Computer Repairs</h2>
+
+                <img
+                    src="Images/Services/computer-repairs.jpeg"
+                    alt="Computer repair and troubleshooting services"
+                    class="service-image">
+
+                <p>
+                    Basic troubleshooting and support to help keep your
+                    computer systems running smoothly.
+                </p>
+
+                <a href="enquiry.html">Enquire About This Service</a>
+            </article>
+
         </section>
+
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 NovaTech Solutions. All rights reserved.</p>
     </footer>

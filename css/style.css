@@ -93,20 +93,25 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
-.logo {
-    width: 800px;
-    height: auto;
-    display: block;
-    margin:0 auto;
-}
+
 
 @media (max-width: 768px) {
 
     header {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+        }
+
+  /* Logo size correction */
+.logo {
+    display: block;
+    width: 90px;
+    height: auto;
+    max-width: 90px;
+    margin: 10px auto;
+    object-fit: contain;
+}
 
     nav {
         flex-direction: column;
@@ -138,7 +143,14 @@ footer {
     form textarea {
         width: 100%;
         max-width: 500px;
+    @media (max-width: 768px) {
+    .logo {
+        max-width: 120px;
     }
+}
+    }
+
+    
 }
 .service-image {
     width: 100%;
@@ -287,4 +299,201 @@ img {
     height: 300px;
     border: 0;
 }
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
 
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    display: block;
+}
+/* Responsive Google Maps */
+.location-section {
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    display: block;
+}
+/* Service search */
+.service-search {
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.service-search input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Service cards */
+.service-card {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 700px;
+}
+
+/* Service images */
+.service-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+/* Image lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85%;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 35px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .logo {
+        max-width: 360px;
+        height: auto;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .service-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contact-form-section,
+    .enquiry-section {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    input,
+    select,
+    textarea {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* NOVATECH LOGO SIZE */
+.logo {
+    width: 180%;
+    max-width: 390px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 100px auto;
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        max-width: 260px;
+        margin: 10px auto;
+    }
+}

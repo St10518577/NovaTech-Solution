@@ -1,54 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaTech Solutions | Contact</title>
+
+    <title>Contact Us | NovaTech Solutions</title>
+
+    <meta name="description" content="Contact NovaTech Solutions in Mbombela for website development, IT support and computer repair enquiries.">
+
+    <meta name="keywords" content="Contact NovaTech Solutions, IT support Mbombela, computer repairs, website development">
+
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
+    <!-- Header and Navigation -->
     <header>
-       
-
         <nav>
-            
-
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
             <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" aria-current="page">Contact</a>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
+
         <section class="contact-info">
-            <h2>Contact Us</h2>
+
+            <h1>Contact Us</h1>
 
             <p>
                 Have a question or need assistance? Contact NovaTech Solutions
                 using the information below.
             </p>
 
-            <h3>Contact Information</h3>
+            <h2>Contact Information</h2>
 
-            <p><strong>Phone:</strong> 066 0589 682</p>
-            <p><strong>Email:</strong> info@novatechsolutions.co.za</p>
-            <p><strong>Address:</strong> 15 Technology Street, Mbombela, Mpumalanga</p>
-            <p><strong>Business Hours:</strong> Monday - Friday, 08:00 - 17:00</p>
+            <p>
+                <strong>Phone:</strong>
+                <a href="tel:+27660589682">066 0589 682</a>
+            </p>
 
-            <h3>Find Us</h3>
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:info@novatechsolutions.co.za">
+                    Sibiyalwazi49@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Address:</strong>
+                19 Hope Street, Mbombela, Mpumalanga
+            </p>
+
+            <p>
+                <strong>Business Hours:</strong>
+                Monday - Friday, 08:00 - 17:00
+            </p>
+
+            <h2>Find Us</h2>
 
             <p>
                 NovaTech Solutions is located in Mbombela, Mpumalanga.
                 Customers can contact us during business hours for assistance
                 or enquiries.
             </p>
+
+            <p>
+                For service requests, please visit our
+                <a href="enquiry.html">Enquiry page</a>.
+            </p>
+
         </section>
+        <section class="contact-form-section">
+    <h2>Send Us a Message</h2>
+
+    <form id="contactForm">
+
+        <label for="contactName">Full Name:</label>
+        <input type="text" id="contactName" required>
+
+        <label for="contactEmail">Email Address:</label>
+        <input type="email" id="contactEmail" required>
+
+        <label for="contactPhone">Phone Number:</label>
+        <input type="tel" id="contactPhone" required>
+
+        <label for="messageType">Message Type:</label>
+        <select id="messageType" required>
+            <option value="">Select a message type</option>
+            <option value="General Enquiry">General Enquiry</option>
+            <option value="Technical Support">Technical Support</option>
+            <option value="Website Development">Website Development</option>
+            <option value="Computer Repairs">Computer Repairs</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="contactMessage">Your Message:</label>
+        <textarea id="contactMessage" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <p id="contactResponse" role="status" aria-live="polite"></p>
+
+    </form>
+</section>
+
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 NovaTech Solutions. All rights reserved.</p>
     </footer>

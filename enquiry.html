@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaTech Solutions | Enquiry</title>
+
+    <title>Make an Enquiry | NovaTech Solutions</title>
+
+    <meta name="description" content="Contact NovaTech Solutions to enquire about website development, IT support and computer repair services.">
+
+    <meta name="keywords" content="NovaTech Solutions enquiry, website development, IT support, computer repairs">
+
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
+    <!-- Header and Navigation -->
     <header>
-
         <nav>
-           
-           
-        
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
-            <a href="enquiry.html">Enquiry</a>
+            <a href="enquiry.html" aria-current="page">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <section>
-            <h2>Make an Enquiry</h2>
+
+        <section class="enquiry-section">
+
+            <h1>Make an Enquiry</h1>
 
             <p>
                 Complete the form below and a member of NovaTech Solutions
                 will respond to your enquiry.
             </p>
 
-            <form action="#" method="post">
+            <form id="enquiryForm" action="#" method="post">
 
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <br><br>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required>
 
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-
-                <br><br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required>
 
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
-
-                <br><br>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required>
 
                 <label for="service">Service Required:</label>
+
                 <select id="service" name="service" required>
                     <option value="">-- Select a Service --</option>
                     <option value="website-development">Website Development</option>
@@ -59,24 +78,29 @@
                     <option value="network-support">Basic Network Support</option>
                 </select>
 
-                <br><br>
-
                 <label for="message">Your Enquiry:</label>
-                <br>
-                <textarea id="message" name="message" rows="6" cols="40"
-                    placeholder="Tell us how we can help you..." required></textarea>
 
-                <br><br>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Tell us how we can help you..."
+                    required></textarea>
 
                 <button type="submit">Submit Enquiry</button>
 
+                <p id="enquiryResponse" role="status" aria-live="polite"></p>
+
             </form>
+
         </section>
+
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 NovaTech Solutions. All rights reserved.</p>
     </footer>
-    
+
 </body>
 </html>
